@@ -1,0 +1,236 @@
+﻿
+* {
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0D2818;
+}
+
+
+
+.nav-LoginUser {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+nav .logonav img {
+    margin: -7vh 0;
+    height: 40vh;
+    width: 40vh;
+}
+
+.LoginTitel {
+    display: flex;
+    justify-content: center;
+}
+
+    .LoginTitel h1 {
+        color: #0D2818;
+    }
+
+.loginform {
+    margin: -3vh 0;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+    .loginform .logincontent {
+        background-color: #fff;
+        padding: 3vh 4vh;
+        width: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+        .loginform .logincontent h2 {
+            color: #1A4E38;
+            margin-bottom: 3vh;
+        }
+
+        .loginform .logincontent form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .loginform .logincontent form input {
+                background-color: #C7F9CC;
+                border-color: transparent;
+                padding: 1.5vh;
+                margin-bottom: 3vh;
+                border-radius: 4px;
+                width: 42vh;
+                outline: 1px auto #1D5E42;
+            }
+
+                .loginform .logincontent form input::-moz-placeholder {
+                    color: #0D2818;
+                    text-align: center;
+                }
+
+                .loginform .logincontent form input::placeholder {
+                    color: #0D2818;
+                    text-align: center;
+                }
+
+            .loginform .logincontent form .PasswordIcon {
+                background-color: transparent;
+                color: #0D2818;
+                position: relative;
+                left: 40%;
+                bottom: 30%;
+            }
+
+            .loginform .logincontent form a {
+                color: #4FA66E;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+
+            .loginform .logincontent form button {
+                background-color: #1A4E38;
+                border-color: transparent;
+                padding: 1.5vh;
+                margin-bottom: 3vh;
+                margin-top: 3vh;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 4px;
+                width: 89%;
+            }
+
+            .loginform .logincontent form h3 {
+                margin-top: 3vh;
+                font-size: 0.8rem;
+                color: #756F6F;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                .loginform .logincontent form h3 a {
+                    font-weight: 100;
+                    border-bottom: 1px solid #4FA66E;
+                }
+
+
+.input-pas-icon {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    left: 2.9vh;
+}
+
+    .input-pas-icon #style-hide-btn {
+        position: relative;
+        right: 15%;
+        background-color: transparent;
+        width: min-content;
+        height: min-content;
+        color: black;
+        outline: transparent;
+    }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+    .loginform .logincontent {
+        padding: 3vh 4vh;
+        width: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+        .loginform .logincontent form {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .loginform .logincontent form input {
+                background-color: #C7F9CC;
+                border-color: transparent;
+                padding: 1.5vh;
+                margin-bottom: 3vh;
+                width: 37vh;
+            }
+
+                .loginform .logincontent form input::-moz-placeholder {
+                    color: #1A4E38;
+                }
+
+                .loginform .logincontent form input::placeholder {
+                    color: #1A4E38;
+                }
+
+            .loginform .logincontent form .PasswordIcon {
+                background-color: transparent;
+                color: #0D2818;
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 80%;
+                bottom: 30%;
+            }
+
+            .loginform .logincontent form a {
+                color: #4FA66E;
+                font-size: 0.8rem;
+                font-weight: bold;
+                margin-top: 0vh;
+            }
+
+            .loginform .logincontent form button {
+                background-color: #1A4E38;
+                border-color: transparent;
+                padding: 1.5vh;
+                margin-bottom: 3vh;
+                margin-top: 3vh;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .loginform .logincontent form h3 {
+                margin-top: 3vh;
+                font-size: 0.8rem;
+                color: #756F6F;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                .loginform .logincontent form h3 a {
+                    font-weight: 100;
+                    border-bottom: 1px solid #4FA66E;
+                }
+}
+
+
+
+
+@media screen and (min-width: 100px) and (max-width:425px) {
+
+    .loginform .logincontent {
+        width: 50vh;
+    }
+
+        .loginform .logincontent form input {
+            padding: 1vh;
+        }
+
+        .loginform .logincontent form button {
+            width: 83%;
+        }
+    /*# sourceMappingURL=main.css.map */

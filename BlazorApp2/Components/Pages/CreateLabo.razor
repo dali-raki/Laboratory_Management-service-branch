@@ -1,20 +1,77 @@
 ﻿@page "/Labs/Create"
+  <nav>
+        <span> <i class="fa-solid fa-flask fa-rotate-by" style="color: #4fa66e; --fa-rotate-angle: 80E99deg;"></i> Create  Laboratory </span>
+        <span><a href="login.html">Singi in</a></span>
+    </nav>
 
-<EditForm Model="newlabo" OnValidSubmit="save" FormName="createLaboForm">
+
+<EditForm data-multi-step class="multi-step-form" Model="newlabo" OnValidSubmit="save" FormName="createLaboForm">
     <DataAnnotationsValidator/>
     <ValidationSummary/>
 
-    <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name"/>
-    <InputText class="form-control" @bind-Value=@newlabo.Adresse placeholder="Adresse"/>
-    <InputText class="form-control" @bind-Value=@newlabo.University placeholder="University"/>
-    <InputText class="form-control" @bind-Value=@newlabo.Faculty placeholder="Faculty"/>
-    <InputText class="form-control" @bind-Value=@newlabo.Departement placeholder="Departement"/>
-    <InputText class="form-control" @bind-Value=@newlabo.Acronyme placeholder="Acronyme"/>
-    <InputText class="form-control" @bind-Value=@newlabo.PhoneNumber placeholder="PhoneNumber"/>
-    <InputText class="form-control" @bind-Value=@newlabo.Email placeholder="Email"/>
-    <InputText class="form-control" @bind-Value=@newlabo.NumAgrement placeholder="NumAgrement"/>
-    <InputText class="form-control" @bind-Value=@newlabo.WebSite placeholder="WebSite" />
 
-    <button type="submit" class="btn btn-primary">Create Labo</button>
+    <div class="card" data-step>
+        <h5>STEP 1 OF 2</h5>
+        <h2 class="step-title">Set up your Names</h2>
+
+        <div class="form-group">
+             <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name"/>
+        </div>
+
+        <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.University placeholder="University"/>
+        </div>
+
+        <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.Faculty placeholder="Faculty"/>
+        </div>
+
+        <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.Departement placeholder="Departement"/>
+        </div>
+
+        <div class="button-next-submit">
+            <button type="button" data-next>Next</button>
+        </div>
+    </div>
+
+       <!-- ==============================STEP2====================================-->
+
+    <div class="card" data-step>
+        <h5>STEP 2 OF 2</h5>
+        <h2 class="step-title">Set up your Contact Infprmation</h2>
+
+         <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.Acronyme placeholder="Acronyme"/>
+        </div>
+
+         <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.PhoneNumber placeholder="PhoneNumber"/>
+        </div>
+
+        <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.Email placeholder="Email"/>
+        </div>
+
+        <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.Adresse placeholder="Adresse" />
+        </div>
+
+         <div class="form-group">
+            <InputText class="form-control" @bind-Value=@newlabo.NumAgrement placeholder="NumAgrement"/>
+        </div>
+
+     <div class="form-group">
+        <InputText class="form-control" @bind-Value=@newlabo.WebSite placeholder="WebSite" />
+    </div>
+
+
+    <div class="button-next-submit">
+            <button type="submit">Create Labo</button>
+    </div>
+    
+
+    </div>
 
 </EditForm>
+
