@@ -10,59 +10,45 @@
     <ValidationSummary/>
 
 
-    <div class="card" data-step>
-        <h5>STEP 1 OF 2</h5>
-        <h2 class="step-title">Set up your Names</h2>
-
         <div class="form-group">
-             <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name"/>
+             <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name" required/>
         </div>
 
         <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.University placeholder="University"/>
+            <InputText class="form-control" @bind-Value=@newlabo.University placeholder="University" required/>
         </div>
 
         <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.Faculty placeholder="Faculty"/>
+        <InputText class="form-control" @bind-Value=@newlabo.Faculty placeholder="Faculty" required />
         </div>
 
         <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.Departement placeholder="Departement"/>
+        <InputText class="form-control" @bind-Value=@newlabo.Departement placeholder="Departement" required />
         </div>
 
-        <div class="button-next-submit">
-            <button type="button" data-next>Next</button>
-        </div>
-    </div>
-
-       <!-- ==============================STEP2====================================-->
-
-    <div class="card" data-step>
-        <h5>STEP 2 OF 2</h5>
-        <h2 class="step-title">Set up your Contact Infprmation</h2>
 
          <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.Acronyme placeholder="Acronyme"/>
+        <InputText class="form-control" @bind-Value=@newlabo.Acronyme placeholder="Acronyme" required />
         </div>
 
          <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.PhoneNumber placeholder="PhoneNumber"/>
+        <InputText class="form-control" @bind-Value=@newlabo.PhoneNumber placeholder="PhoneNumber" required />
         </div>
 
         <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.Email placeholder="Email"/>
+        <InputText class="form-control" @bind-Value=@newlabo.Email placeholder="Email" required />
         </div>
 
         <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.Adresse placeholder="Adresse" />
+        <InputText class="form-control" @bind-Value=@newlabo.Adresse placeholder="Adresse" required />
         </div>
 
          <div class="form-group">
-            <InputText class="form-control" @bind-Value=@newlabo.NumAgrement placeholder="NumAgrement"/>
+         <InputText class="form-control" @bind-Value=@newlabo.NumAgrement placeholder="NumAgrement" pattern="[0-9]{9}" autofocus required title="The Number Agrement Consists of 9 Digits "/>
         </div>
 
      <div class="form-group">
-        <InputText class="form-control" @bind-Value=@newlabo.WebSite placeholder="WebSite" />
+        <InputText class="form-control" @bind-Value=@newlabo.WebSite placeholder="WebSite" required />
     </div>
 
 
@@ -71,7 +57,6 @@
     </div>
     
 
-    </div>
 
 </EditForm>
 
