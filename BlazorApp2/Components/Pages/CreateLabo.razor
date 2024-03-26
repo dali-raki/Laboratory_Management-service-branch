@@ -1,0 +1,20 @@
+﻿@page "/Labs/Create"
+
+<EditForm Model="newlabo" OnValidSubmit="save" FormName="createLaboForm">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name"/>
+    <InputText class="form-control" @bind-Value=@newlabo.Adresse placeholder="Adresse"/>
+    <InputText class="form-control" @bind-Value=@newlabo.University placeholder="University"/>
+    <InputText class="form-control" @bind-Value=@newlabo.Faculty placeholder="Faculty"/>
+    <InputText class="form-control" @bind-Value=@newlabo.Departement placeholder="Departement"/>
+    <InputText class="form-control" @bind-Value=@newlabo.Acronyme placeholder="Acronyme"/>
+    <InputText class="form-control" @bind-Value=@newlabo.PhoneNumber placeholder="PhoneNumber"/>
+    <InputText class="form-control" @bind-Value=@newlabo.Email placeholder="Email"/>
+    <InputText class="form-control" @bind-Value=@newlabo.NumAgrement placeholder="NumAgrement"/>
+    <InputText class="form-control" @bind-Value=@newlabo.WebSite placeholder="WebSite" />
+
+    <button type="submit" class="btn btn-primary">Create Labo</button>
+
+</EditForm>

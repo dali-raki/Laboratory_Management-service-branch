@@ -1,0 +1,9 @@
+﻿@page "/CreateLabo"
+
+<EditForm Model="newlabo" OnValidSubmit="save" FormName="createLaboForm">
+
+    <InputText class="form-control" @bind-Value=@newlabo.Name placeholder="Name"/>
+
+
+
+</EditForm>
